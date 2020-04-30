@@ -8,15 +8,15 @@ I'm creating a script/package I'm calling Run SuSiE Run. This package has severa
 2. Make a LD (linkage disequilibrium) matrix with the reference panel data
 3. Align and clean the summary stats and LD matrix
 4. Fine-map the region using 2 different programs:
-    4a. A program written in R named SuSiE
-    4b. A program written in C++ named DAP-G
+    - SuSiE, written in R
+    - DAP-G, written in C++
 
-*Important Note: This package, when used in it's full extent u
+*Important Note: This package, when used in it's full extent, references data that is not publicly available*
 
+To access this repository locally, enter the following code into command line:
 
 ```
 git clone https://github.com/hsowards/project_spring_2020
-
 ```
 
 Then open notebooks/RSR.ipynb, which will walk you through the process of finemapping from start to finish.

@@ -1,5 +1,5 @@
 #!/bin/bash
-source config.sh #sourcing the config file so that configs are used in file creation
+source scripts/config.sh #sourcing the config file so that configs are used in file creation
 unzip /data/Brown_lab/vQTL/LD_reference/UKBB/transfer_1599580_files_b3b70061.zip #unzip (decompress into multiple file componenets), this and the next step must be done for plink to run
 gunzip UKBB* #gunzip (decompress files)
 module load plink #load plink
