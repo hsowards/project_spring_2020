@@ -8,3 +8,4 @@ plink --bfile UKBB_LD_bestguess_ref_panel_maf1e3_rsq_point3_HRC_SNPs_only --chr 
 mv -r $rsID.* $dir #moving files to indicated project directory
 sumstats="MEL_all_RSQ0.5_${chr}_for_TWAS.txt.gz" #initializing filename for sumstats
 mv -r /data/Brown_lab/PAINTOR/dataset/GWAS_Meta/$sumstats $dir #moving sumstats to project directory
+echo "The configured region is on chr $chr, starting at position $start, and ending at position $end. $rsID.bed/.fam/.bim and MEL_all_RSQ0.5_${chr}_for_TWAS.txt.gz are now available in $dir."
