@@ -108,7 +108,3 @@ R scripts/SuSiE.R
     ```
     sh scripts/dapg.sh
     ```
-
-
-
-
