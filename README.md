@@ -44,7 +44,7 @@ ls $dir
 ## 2. Make a linkage disequilibrium (LD) matrix with the reference panel data
 If you haven't yet, edit the file **scripts/config.sh** to match your region of interest and the directory where your data is.
 
-Running the following script will:
+The following functions will:
 1. read in plink data, specifically the genotype matrix (X)
 2. make sure that SNPs are in columns rather than rows
 3. set missing genotypes to the sample mean
@@ -64,7 +64,7 @@ python scripts/ld.py
 3. Align and clean the summary statistics and LD matrix
 
 ## 3. Align and clean the summary statistics and LD matrix
-Running the following script will:
+The following functions will:
 1. read in the summary statistics and new LD matrix
 2. pare the datasets down to the region
 3. check that ref/alt alleles are aligned between the datasets
@@ -81,7 +81,7 @@ python scripts/processing.py
 ```
 
 ## 4. Fine-map the region with SuSiE
-Running the following script will:
+The following script will:
 1. read in the summary stats and LD matrix
 2. run the fine-mapping algorithm with L number of predicted causals
 3. write out the credible sets produced by SuSiE as rsid_susie_L_cs.csv
