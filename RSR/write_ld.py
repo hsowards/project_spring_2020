@@ -10,8 +10,8 @@ def write_ld(ld, rsID):
     ld (ndarray): linkage disequilibrium matrix
     """
     if eig_check(ld) == True:
-        filename = dir + "/" + rsID + ".ld"
-        np.savetext(filename, ld, delimeter=",")
-    else :
+        filename = dir + "/" + rsID + ".ld" #set up filename from configs
+        np.savetext(filename, ld, delimeter=",") #write out file
+    else : #if matrix is not positive semi-definite, LD matrix is not saved
         print("LD matrix is not positive semi-definite")
         

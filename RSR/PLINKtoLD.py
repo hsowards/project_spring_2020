@@ -25,4 +25,6 @@ def PLINKtoLD(x, n):
     #standardizing the matrix (zscore)
     x = (x - np.mean(x, axis=0)) / np.std(x, axis=0)
     #creating the ld matrix
-    ld = np.transpose(x) @ (x/n)
+    #ld = np.dot(np.transpose(x), (x/n)) doesn't work
+    #ld = np.transpose(x) @ x/n doesn't work
+    #ld = np.multiply(np.transpose(x), (x/n)) doesn't work

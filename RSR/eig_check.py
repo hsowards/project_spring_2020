@@ -12,6 +12,6 @@ def eig_check(ld):
     Returns: 
     boolean: True if matrix is positive semi-definite, false if not
     """
-    eig <- np.linalg.eigvals(ld)
-    check <- np.all(np.linalg.eigvals(x) > -1e-10)
-    print(check)
+    eig = np.linalg.eigvals(ld) #taking the eigenvalues of the ld matrix
+    check = np.all(np.linalg.eigvals(x) > -1e-10) #checking that the values are all above -1e-10
+    print(check) #prints boolean

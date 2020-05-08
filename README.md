@@ -4,7 +4,7 @@
 
 [![CircleCI](https://circleci.com/gh/biof309/project_spring_2020/tree/master.svg?style=shield)](https://circleci.com/gh/biof309/project_spring_2020/tree/master)
 
-This package aims to help process data for analysis using the fine-mapping programs SuSiE and DAP-G. These are main goals of this package:
+This package aims to help process GWAS summary statistics and LD reference panel data for analysis on a selected region using the fine-mapping programs SuSiE and DAP-G. These are main goals of this package:
 1. Limited to those that have access: Pull GWAS summary statistics and reference panel data 
 2. Make a linkage disequilibrium (LD) matrix with the reference panel data (PLINK format)
 3. Align and clean the summary stats and LD matrix
@@ -61,10 +61,8 @@ The following functions will:
 python scripts/ld.py
 ```
 
-3. Align and clean the summary statistics and LD matrix
-
 ## 3. Align and clean the summary statistics and LD matrix
-The following functions will:
+The following functions hope to:
 1. read in the summary statistics and new LD matrix
 2. pare the datasets down to the region
 3. check that ref/alt alleles are aligned between the datasets
@@ -73,8 +71,8 @@ The following functions will:
     - the bim file will be used to align the summary stats with the LD matrix
     - SNPs that are missing from either file will be removed
 4. write out the clean summary stats and LD matrix
-    - Files for analysis in SuSiE will be named rsid_susie_sumstats.txt and rsid_susie.ld
-    - Files for analysis in DAP-G will be named rsid_dapg_sumstats.txt and rsid_dapg.ld
+    - Files for analysis in SuSiE will be named rsid_susie_sumstats.csv and rsid_susie.ld
+    - Files for analysis in DAP-G will be named rsid_dapg_sumstats.csv and rsid_dapg.ld
 
 ```
 python scripts/processing.py
